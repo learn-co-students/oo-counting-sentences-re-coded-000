@@ -3,12 +3,12 @@ require 'pry'
 class String
 
   def sentence?
-    if  self.end_with?(".")
-      return true
-    else
-      return false
-    end
+  if  self.end_with?(".")
+    return true
+  else
+    return false
   end
+end
 
   def question?
     if  self.end_with?("?")
@@ -27,12 +27,8 @@ class String
   end
 
   def count_sentences
-    array=self.split(/\.|\?|\!/)
-      array.each do |sen|
-        if sen==""
-      array.delete(sen)  
-    end
+array=self.split(".","!","?")
+counter=array.length
+puts counter
   end
-  return array.length
-end
 end
