@@ -1,3 +1,4 @@
+
 require 'pry'
 
 class String
@@ -17,6 +18,6 @@ self.end_with?("?")
   end
 
   def count_sentences
-   self.split(/[?.!]/).delete_if{|s| s==""}.count
+
   end
 end
